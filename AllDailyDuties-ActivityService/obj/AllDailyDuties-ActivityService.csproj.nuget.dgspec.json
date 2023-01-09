@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\koen\\Desktop\\Semester6\\individual\\organisation\\add_activityservice\\AllDailyDuties-ActivityService\\AllDailyDuties-ActivityService.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\koen\\Desktop\\Semester6\\individual\\organisation\\add_activityservice\\AllDailyDuties-ActivityService\\AllDailyDuties-ActivityService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koen\\Desktop\\Semester6\\individual\\organisation\\add_activityservice\\AllDailyDuties-ActivityService\\AllDailyDuties-ActivityService.csproj",
+        "projectName": "AllDailyDuties-ActivityService",
+        "projectPath": "C:\\Users\\koen\\Desktop\\Semester6\\individual\\organisation\\add_activityservice\\AllDailyDuties-ActivityService\\AllDailyDuties-ActivityService.csproj",
+        "packagesPath": "C:\\Users\\koen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koen\\Desktop\\Semester6\\individual\\organisation\\add_activityservice\\AllDailyDuties-ActivityService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\koen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

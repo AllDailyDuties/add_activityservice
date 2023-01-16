@@ -58,7 +58,3 @@ C:\Users\koen\Desktop\Semester6\individual\organisation\add_activityservice\AllD
 C:\Users\koen\Desktop\Semester6\individual\organisation\add_activityservice\AllDailyDuties-ActivityService\obj\Debug\net6.0\ref\AllDailyDuties-ActivityService.dll
 C:\Users\koen\Desktop\Semester6\individual\organisation\add_activityservice\AllDailyDuties-ActivityService\obj\Debug\net6.0\AllDailyDuties-ActivityService.pdb
 C:\Users\koen\Desktop\Semester6\individual\organisation\add_activityservice\AllDailyDuties-ActivityService\obj\Debug\net6.0\AllDailyDuties-ActivityService.genruntimeconfig.cache
-C:\Users\koen\Desktop\Semester6\individual\organisation\add_activityservice\AllDailyDuties-ActivityService\bin\Debug\net6.0\Microsoft.Azure.Documents.ServiceInterop.dll
-C:\Users\koen\Desktop\Semester6\individual\organisation\add_activityservice\AllDailyDuties-ActivityService\bin\Debug\net6.0\Microsoft.Azure.DocumentDB.Core.dll
-C:\Users\koen\Desktop\Semester6\individual\organisation\add_activityservice\AllDailyDuties-ActivityService\bin\Debug\net6.0\runtimes\win7-x64\native\Cosmos.CRTCompat.dll
-C:\Users\koen\Desktop\Semester6\individual\organisation\add_activityservice\AllDailyDuties-ActivityService\bin\Debug\net6.0\runtimes\win7-x64\native\Microsoft.Azure.Documents.ServiceInterop.dll

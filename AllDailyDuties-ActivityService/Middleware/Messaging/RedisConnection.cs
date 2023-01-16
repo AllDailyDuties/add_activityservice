@@ -6,7 +6,7 @@ namespace AllDailyDuties_ActivityService.Middleware.Messaging
     {
         private static Lazy<ConnectionMultiplexer> Lazy = new Lazy<ConnectionMultiplexer>(() =>
         {
-            return ConnectionMultiplexer.Connect("localhost:6379");
+            return ConnectionMultiplexer.Connect("redis-0.redis.default.svc.cluster.local:6379,password=1_1qwerty");
         });
 
         public static ConnectionMultiplexer Connection

@@ -2,19 +2,19 @@
 {
     public class AgendaItem
     {
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
         public string Title { get; set; }
         public string Activity { get; set; }
-        public User User { get; set; }
+        public List<User> Users { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime ScheduledAt { get; set; }
 
-        public AgendaItem(Guid id, string title, string activity, User user, DateTime createdAt, DateTime scheduledAt)
+        public AgendaItem(Guid _id, string title, string activity, List<User> users, DateTime createdAt, DateTime scheduledAt)
         {
-            Id = id;
+            id = _id;
             Title = title;
             Activity = activity;
-            User = user;
+            Users = users;
             CreatedAt = createdAt;
             ScheduledAt = scheduledAt;
         }

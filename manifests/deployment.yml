@@ -22,4 +22,4 @@ spec:
         imagePullPolicy: Always
         resources:
           limits:
-            memory: 2Gi
+            memory: 1Gi

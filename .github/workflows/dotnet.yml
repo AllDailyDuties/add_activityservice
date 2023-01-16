@@ -1,19 +1,11 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: .NET
-
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
 jobs:
-  build:
-
+  build-test:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -26,3 +18,22 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+
+  build-and-deploy:
+    runs-on: self-hosted
+    needs:  build-test
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Build and push image to registry
+      id: build-image
+      run: |
+        cd $GITHUB_WORKSPACE/
+        sudo docker build . -t localhost:32000/addactivityservice:latest
+        sudo docker push localhost:32000/addactivityservice:latest
+    
+    - name: Deploy to Microk8s cluster
+      id: deploy
+      run: |
+        microk8s kubectl apply -f ./manifests/deployment.yml
+        microk8s kubectl apply -f ./manifests/service.yml

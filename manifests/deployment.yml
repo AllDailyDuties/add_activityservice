@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: addactivityservice
+  labels:
+    app: addactivityservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: addactivityservice
+  template:
+    metadata:
+      labels:
+        app: addactivityservice
+    spec:
+      containers:
+      - name: addactivityservice
+        image: localhost:32000/addactivityservice:latest
+        ports:
+        - containerPort: 9002
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: 2Gi

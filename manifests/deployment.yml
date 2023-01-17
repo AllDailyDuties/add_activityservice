@@ -13,6 +13,10 @@ spec:
     metadata:
       labels:
         app: addactivityservice
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
     spec:
       containers:
       - name: addactivityservice

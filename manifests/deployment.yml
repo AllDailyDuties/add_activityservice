@@ -13,10 +13,6 @@ spec:
     metadata:
       labels:
         app: addactivityservice
-  strategy:
-    rollingUpdate:
-      maxUnavailable: 1
-      maxSurge: 1
     spec:
       containers:
       - name: addactivityservice
@@ -27,3 +23,8 @@ spec:
         resources:
           limits:
             memory: 500Mi
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1

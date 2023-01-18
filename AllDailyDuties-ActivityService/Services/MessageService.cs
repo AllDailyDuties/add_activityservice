@@ -69,7 +69,7 @@ namespace AllDailyDuties_ActivityService.Services
                 dynamic items = response.Resource;
 
                 // Update the 'Status' property
-                items.Status = "AssignedNew";
+                items.Status = "Assigned!";
 
                 // Replace the document
                 response = await container.ReplaceItemAsync<dynamic>(items, mainId, new PartitionKey(mainId.ToString()));
